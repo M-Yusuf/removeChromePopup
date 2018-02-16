@@ -1,0 +1,19 @@
+{
+
+  "description": "",
+  "manifest_version": 2,
+  "name": "Youtube Chrome Popup Remover",
+  "version": "1.0",
+  "homepage_url": "https://github.com/M-Yusuf/removeChromePopup",
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["removeChromePopup.js"]
+    }
+  ]
+
+}
